@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+
+.avatar {
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  animation: float 6s infinite ease-in-out alternate;
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+
+.join { box-shadow: 0 0 15px #00ff66aa; }
+.tap { box-shadow: 0 0 15px #ffee00aa; }
+.gift { box-shadow: 0 0 25px #ff0099aa; border: 4px solid #ff0099; }
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(var(--move-x), var(--move-y)) rotate(360deg); }
+}
