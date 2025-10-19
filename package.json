@@ -1,0 +1,10 @@
+{
+  "name": "tiktok-live-overlay",
+  "version": "1.0.0",
+  "description": "TikTok Live floating avatar overlay",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev"
+  }
+}
